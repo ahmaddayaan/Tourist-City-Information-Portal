@@ -17,6 +17,7 @@ Users can search for any city to retrieve real-time information about the destin
 - Shows humidity and wind speed
 - Displays weather icons and minimum/maximum temperature
 - Provides a **14-day weather forecast**
+- **currently it shows 3-day forecast due to the free plan** 
 
 ### 🌍 City Information
 - Fetches information about the selected city using the **Wikipedia API**
@@ -61,12 +62,28 @@ Users can search for any city to retrieve real-time information about the destin
 
 This project integrates multiple public APIs:
 
-- **Weather API** – Provides weather data and forecasts
+- **Weather API** – Provides weather data and forecasts [currently it shows 3-day forecast due to free plan]
 - **Wikipedia API** – Retrieves city information
-- **GNews API** – Fetches latest news related to the city
+- **GNews API** – Fetches the latest news related to the city
 - **Google Maps Embed** – Displays city location
 
 These APIs allow the portal to provide real-time dynamic information.
+
+---
+
+## 📸 Screenshots
+
+### Home Page
+ [Clock and weather](screenshot1.png)
+
+### Information via Wikipedia
+ [City Information](screenshot2.png)
+
+ ### News
+ [News](screenshot3.png)
+
+### Map and Bucket list
+ [Map and Bucket list](screenshot4.png)
 
 ---
 
@@ -77,6 +94,10 @@ tourist-city-information-portal
 ├── index.html
 ├── style.css
 ├── script.js
+├── screenshot1.png
+├── screenshot2.png
+├── screenshot3.png
+├── screenshot4.png
 └── README.md
 
 ---
