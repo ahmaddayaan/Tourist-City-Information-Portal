@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourist City Information Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌍 Tourist City Information Portal</h1>
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name..." />
+      <button id="searchBtn">Search</button>
+    </div>
+  </header>
+
+   <section class="card" id="timeCard" data-animate>
+      <h2>🕒Time & Date</h2>
+      <div class="time-wrap">
+        <div id="timeDisplay" class="big-time">--:--</div>
+        <div id="dateDisplay" class="date">Loading...</div>
+      </div>
+    </section>
+
+  <section id="wcCard" class="card weather-card" data-animate>
+    <h2>Weather Information</h2>
+    <div class="weather-main">
+      <div class="weather-left">
+        <h3 id="wcCity">--</h3>
+        <p id="wcCond" class="muted">--</p>
+        <p><span id="wcTemp">--°C</span></p>
+        <p id="wcMinMax" class="muted">-- / --</p>
+      </div>
+      <div class="weather-right">
+        <img id="wcIcon" src="" alt="Weather icon">
+        <p>Humidity: <span id="wcHum">--</span></p>
+        <p>Wind: <span id="wcWind">--</span></p>
+        <p>Local Time: <span id="wcLocal">--</span></p>
+      </div>
+    </div>
+    <p id="wcError" class="error"></p>
+    <button id="wcToggleBtn">Show 14-Day Forecast ⌄</button>
+
+    <div id="wcForecast" class="wc-forecast" aria-hidden="true">
+      <div id="wcForecastInner" class="wc-forecast-inner"></div>
+    </div>
+  </section>
+
+  <section class="card" id="wikiCard" data-animate>
+      <h2>🌍 About the City</h2>
+      <div id="wikiResult" class="card-body">City information will appear here...</div>
+    </section>
+
+  <section class="card news-card" id="newsCard" data-animate>
+      <h2>📰 Latest News</h2>
+      <div id="newsResult"></div>
+  </section>
+
+  <section class="card map-card" data-animate>
+    <h2>Map</h2>
+    <div id="mapFrame" class="map-frame"></div>
+  </section>
+
+  <section class="card notes-card" data-animate>
+    <h2>Bucket List & Notes</h2>
+    <textarea id="notesInput" placeholder="Write your travel notes..."></textarea>
+    <div class="notes-buttons">
+      <button id="saveNotes">💾 Save Notes</button>
+      <button id="addToBucket">➕ Add to Bucket List</button>
+    </div>
+    <ul id="bucketList"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
